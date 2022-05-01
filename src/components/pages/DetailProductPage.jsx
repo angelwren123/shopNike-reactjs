@@ -44,7 +44,7 @@ const DetailProductPage = () => {
                                     </div>
                                     <p className="lead">{item.desc}</p>
                                     <div className="d-flex">
-                                        <input className="form-control text-center me-3" id="inputQuantity" type="num" name='quantityPrd' onChange={(event)=>changeQuantity(event)} value={quantity.quantityPrd} style={{ maxWidth: 3 + 'rem' }} />
+                                        <input className="form-control text-center me-3" id="inputQuantity" type="number" name='quantityPrd' onChange={(event)=>changeQuantity(event)} value={quantity.quantityPrd} style={{ maxWidth: 3 + 'rem' }} />
                                         <button className="btn btn-outline-dark flex-shrink-0"
                                             type="button"
                                             onClick={()=>{dataContext.addToCart(item.id,parseInt(quantity.quantityPrd))}} >
