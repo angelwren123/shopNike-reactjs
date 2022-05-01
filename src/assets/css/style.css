@@ -1,0 +1,36 @@
+.home_header{
+    text-align: center;
+  }
+  .home_banner{
+    display: flex;
+    justify-content: center;
+  }
+  .img_banner{
+    width: 50%;
+  }
+  h2,h1{
+    text-align: center;
+  }
+  .slogan{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+  }
+  .title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+  }
+  .content{
+    text-align: center;
+  }
+.delete_icon:hover{
+  cursor: pointer;
+  background-color: red;
+  border-radius: 20px;
+}
+.header__custom{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
