@@ -85,7 +85,7 @@ const ProductsPage = () => {
                                             <div className="bi-star-fill"></div>
                                             <div className="bi-star-fill"></div>
                                             <div className="bi-star-fill"></div>
-                                        </div> */}
+                                            </div> */}
                                             {/* <!-- Product price--> */}
                                             {product.sale_price > 0 ? <><span className="text-muted text-decoration-line-through">${product.price}</span><span style={{ color: 'red', fontWeight: 'bolder' }}>${product.sale_price}</span></> : ''}
                                             {product.sale_price === 0 ? <><span style={{ color: 'red', fontWeight: 'bolder' }}>${product.price}</span></> : ''}

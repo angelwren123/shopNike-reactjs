@@ -25,7 +25,7 @@ const Context = () => {
     const loginAndLogout = (value) =>{
         setIsSignedIn(value)
     }
-    const data = async () => {
+    const dataProducts = async () => {
         await API.get('/')
             .then((res) => {
                 // console.log(res.data)
@@ -133,15 +133,18 @@ const Context = () => {
     const search=(value)=>{
         console.log(value);
         if(!value || value.txtSearch===''|| value.txtSearch===null){
-            data();
+            dataProducts();
         }else{
-            var newApi = [...products]
-            const result = newApi.filter((product,index)=>{
-                return product.name.toLowerCase().indexOf(value)!==-1
-            })
-            setDataApi(result)
+            apiCaller('products','GET',null).then(res=>{
+                setDataApi(
+                    res.data.filter((product, index)=>{
+                        return product.name.toLowerCase().indexOf(value)!==-1
+                    })
+                )
+            });
         }
     }
+
     const value = {
         dataApi,
         addToCart,

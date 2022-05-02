@@ -12,7 +12,7 @@ const HomePage = () => {
         <hr/>
         <h1 className="slogan">JUST DO IT</h1>
         <h2 className="title">shop early, relax later</h2>
-        <p className="content">"Make your December extra easy"</p>
+        <p className="content">"Make your May extra easy"</p>
         <div className="d-grid gap-2 col-6 mx-auto">
             <Link  className="btn btn-outline-dark" to="/products">SHOP NOW</Link>
         </div>
