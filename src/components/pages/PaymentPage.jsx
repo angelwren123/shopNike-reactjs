@@ -49,7 +49,7 @@ const PaymentPage = () => {
                     `   Email:  ${infoBill[0].email},
                         Phone:  ${infoBill[0].phone},
                         Address:  ${infoBill[0].address},
-                        Products:  ${dataContext.cart.map(item => {
+                        Products:===>  ${dataContext.cart.map(item => {
                        return ` 
                         Name: ${item.name} x ${item.quantity}`
                     })},

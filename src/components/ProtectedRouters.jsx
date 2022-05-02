@@ -9,8 +9,10 @@ const ProtectedRouters = () => {
         const user = { loggedIn: dataContext.isSignedIn };
         return user && user.loggedIn
     }
+    
     const isAuth = useAuth();
     return isAuth ? <Outlet/> : <Navigate to={'/'}/>
+
   
 }
 
