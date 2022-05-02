@@ -91,7 +91,7 @@ const PaymentPage = () => {
                             </Form>
                         </div >
                         <div className="col-md-7">
-                            <h1>Hóa đơn</h1>
+                            <h1>CART</h1>
                                 <table class="table">
                                     <thead>
                                         <tr>
