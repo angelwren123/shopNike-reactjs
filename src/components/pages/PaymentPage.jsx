@@ -49,7 +49,7 @@ const PaymentPage = () => {
                     `   Email:  ${infoBill[0].email},
                         Phone:  ${infoBill[0].phone},
                         Address:  ${infoBill[0].address},
-                        Products:===>  ${dataContext.cart.map(item => {
+                        Products:==>  ${dataContext.cart.map(item => {
                        return ` 
                         Name: ${item.name} x ${item.quantity}`
                     })},
@@ -105,7 +105,7 @@ const PaymentPage = () => {
                                         {bill.map((item,index)=>(
                                             <tr>
                                             <td scope="row">{item.name}</td>
-                                            <td><img src={require(`../../assets/img/${item.image}`)} style={{ width: 10 + '%' }} alt="" /></td>
+                                            <td><img src={require(`../../assets/img/${item.image}`)} style={{ width: 50 + 'px' }} alt="" /></td>
                                             <td>{item.quantity}</td>
                                             <td>{item.sale_price !== 0 ? <span style={{ color: 'red' }}>${item.sale_price * item.quantity}</span> : <span style={{ color: 'red' }}>${item.price * item.quantity}</span>}</td>
 

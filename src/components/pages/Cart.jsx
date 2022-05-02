@@ -53,7 +53,7 @@ const Cart = () => {
 
                                     <tr key={index}>
                                         <td>{item.name}</td>
-                                        <td><img src={require(`../../assets/img/${item.image}`)} style={{ width: 10 + '%' }} alt="" /></td>
+                                        <td><img src={require(`../../assets/img/${item.image}`)} style={{ width: 50 + 'px' }} alt="" /></td>
                                         <td>
                                             <button className="btn btn-dark" onClick={() => dataContext.reduction(item.id)} style={{ borderRadius: 100 + '%', paddingRight: 14 + 'px', paddingLeft: 14 + 'px' }} >-</button>
                                             &ensp;<span>  {item.quantity} </span>&ensp;
